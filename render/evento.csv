@@ -1,0 +1,46 @@
+tempo,filosofo,status,garfos_usados
+22:07:25,Filósofo 1,está pensando
+22:07:25,Filósofo 2,está pensando
+22:07:25,Filósofo 3,está pensando
+22:07:25,Filósofo 4,está pensando
+22:07:25,Filósofo 5,está pensando
+22:07:26,Filósofo 3,pegou garfos,Garfo 3 e Garfo 4
+22:07:26,Filósofo 3,está comendo,Garfo 3 e Garfo 4
+22:07:26,Filósofo 1,pegou garfos,Garfo 1 e Garfo 2
+22:07:26,Filósofo 1,está comendo,Garfo 1 e Garfo 2
+22:07:27,Filósofo 1,largou garfos,Garfo 1 e Garfo 2
+22:07:27,Filósofo 3,largou garfos,Garfo 3 e Garfo 4
+22:07:27,Filósofo 1,está pensando
+22:07:27,Filósofo 3,está pensando
+22:07:27,Filósofo 2,pegou garfos,Garfo 2 e Garfo 3
+22:07:27,Filósofo 2,está comendo,Garfo 2 e Garfo 3
+22:07:27,Filósofo 5,pegou garfos,Garfo 5 e Garfo 1
+22:07:27,Filósofo 5,está comendo,Garfo 5 e Garfo 1
+22:07:28,Filósofo 2,largou garfos,Garfo 2 e Garfo 3
+22:07:28,Filósofo 2,está pensando
+22:07:28,Filósofo 5,largou garfos,Garfo 5 e Garfo 1
+22:07:28,Filósofo 5,está pensando
+22:07:29,Filósofo 4,pegou garfos,Garfo 4 e Garfo 5
+22:07:29,Filósofo 4,está comendo,Garfo 4 e Garfo 5
+22:07:29,Filósofo 1,pegou garfos,Garfo 1 e Garfo 2
+22:07:29,Filósofo 1,está comendo,Garfo 1 e Garfo 2
+22:07:30,Filósofo 1,largou garfos,Garfo 1 e Garfo 2
+22:07:30,Filósofo 1,terminou sua execução
+22:07:30,Filósofo 4,largou garfos,Garfo 4 e Garfo 5
+22:07:30,Filósofo 4,está pensando
+22:07:30,Filósofo 2,pegou garfos,Garfo 2 e Garfo 3
+22:07:30,Filósofo 2,está comendo,Garfo 2 e Garfo 3
+22:07:31,Filósofo 5,pegou garfos,Garfo 5 e Garfo 1
+22:07:31,Filósofo 5,está comendo,Garfo 5 e Garfo 1
+22:07:31,Filósofo 2,largou garfos,Garfo 2 e Garfo 3
+22:07:31,Filósofo 2,terminou sua execução
+22:07:32,Filósofo 3,pegou garfos,Garfo 3 e Garfo 4
+22:07:32,Filósofo 3,está comendo,Garfo 3 e Garfo 4
+22:07:32,Filósofo 5,largou garfos,Garfo 5 e Garfo 1
+22:07:32,Filósofo 5,terminou sua execução
+22:07:33,Filósofo 3,largou garfos,Garfo 3 e Garfo 4
+22:07:33,Filósofo 3,terminou sua execução
+22:07:33,Filósofo 4,pegou garfos,Garfo 4 e Garfo 5
+22:07:33,Filósofo 4,está comendo,Garfo 4 e Garfo 5
+22:07:34,Filósofo 4,largou garfos,Garfo 4 e Garfo 5
+22:07:34,Filósofo 4,terminou sua execução
