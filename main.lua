@@ -1,18 +1,18 @@
--- Importa o módulo "lanes" e configura o ambiente para criar e gerenciar threads
+-- Importa o módulo "lanes" e configura o ambiente
 local lanes = require "lanes".configure()
 
 -- Constantes de configuração
 local NUM_FILOSOFOS = 5
-local MAX_ITERACOES = 3
-local TEMPO_MAXIMO_ESPERA = 4  -- Tempo máximo para tentar pegar os hashis antes de considerar deadlock
-local TEMPO_MAXIMO_ESPERA_STARVATION = 5  -- Tempo máximo para considerar starvation
+local MAX_ITERACOES = 5
+local TEMPO_MAXIMO_ESPERA = 5  -- Tempo máximo para tentar pegar os hashis antes de considerar deadlock
+local TEMPO_MAXIMO_ESPERA_STARVATION = 8  -- Tempo máximo para considerar starvation
 
 -- Função para obter o tempo atual no formato "HH:MM:SS"
 local function obter_tempo()
     return os.date("%H:%M:%S")
 end
 
--- Função para registrar eventos no sistema de mensagens
+-- Função para registrar eventos no sistema
 -- Envia mensagens para o "linda" sobre o estado atual dos filósofos
 local function registrar_evento(linda, filosofo_id, acao, garfo1, garfo2)
     local tempo_atual = obter_tempo()
@@ -24,14 +24,13 @@ local function registrar_evento(linda, filosofo_id, acao, garfo1, garfo2)
 end
 
 -- Função principal que simula o comportamento de um filósofo
+-- Cada filósofo pensa, tenta pegar os hashis, come e depois larga os garfos
 local function filosofo(linda, id)
     local garfo_esquerda = id
     local garfo_direita = (id % NUM_FILOSOFOS) + 1
     local iteracoes = 0
 
-    -- Cada filósofo realiza um número máximo de iterações
     while iteracoes < MAX_ITERACOES do
-        -- Filósofo está pensando
         registrar_evento(linda, id, "está pensando")
         os.execute("sleep 1")  -- Simula o tempo de pensamento
 
@@ -44,13 +43,12 @@ local function filosofo(linda, id)
         while not pegou_garfo_esquerda or not pegou_garfo_direita do
             local tempo_espera = os.time() - inicio_espera
 
-            -- Verifica se o tempo máximo de espera foi excedido, indicando deadlock
+            -- Verifica se o tempo máximo de espera foi excedido (deadlock)
             if tempo_espera > TEMPO_MAXIMO_ESPERA then
                 registrar_evento(linda, id, "deadlock detectado", garfo_esquerda, garfo_direita)
                 return
             end
 
-            -- Verifica se ambos os hashis estão disponíveis
             if not linda:get("garfo" .. garfo_esquerda) and not linda:get("garfo" .. garfo_direita) then
                 -- Tenta pegar ambos os hashis
                 linda:set("garfo" .. garfo_esquerda, true)
@@ -59,10 +57,9 @@ local function filosofo(linda, id)
                 pegou_garfo_direita = true
                 registrar_evento(linda, id, "pegou garfos", garfo_esquerda, garfo_direita)
             else
-                os.execute("sleep 1")  -- Aguarda antes de tentar novamente
+                os.execute("sleep 1")  -- Aguarda um segundo antes de tentar novamente
                 tentativas = tentativas + 1
-
-                -- Verifica se o tempo de espera para starvation foi excedido
+                -- Verifica se o tempo máximo de espera para starvation foi excedido
                 if tentativas * 1 > TEMPO_MAXIMO_ESPERA_STARVATION then
                     registrar_evento(linda, id, "starvation detectado", garfo_esquerda, garfo_direita)
                     return
@@ -70,11 +67,10 @@ local function filosofo(linda, id)
             end
         end
 
-        -- Filósofo começa a comer
+        -- O filósofo começa a comer
         registrar_evento(linda, id, "está comendo", garfo_esquerda, garfo_direita)
         os.execute("sleep 1")  -- Simula o tempo de refeição
-
-        -- Filósofo larga os hashis após comer
+        -- O filósofo larga os hashis
         linda:set("garfo" .. garfo_esquerda, nil)
         linda:set("garfo" .. garfo_direita, nil)
         registrar_evento(linda, id, "largou garfos", garfo_esquerda, garfo_direita)
@@ -98,7 +94,6 @@ local function processar_fila(linda, num_filosofos)
         if chave == "fila" then
             print("Processando item da fila:", mensagem)
             arquivo_csv:write(mensagem .. "\n")
-            -- Verifica se todos os filósofos terminaram
             if string.find(mensagem, "terminou sua execução") then
                 filosofos_terminados = filosofos_terminados + 1
                 if filosofos_terminados == num_filosofos then
@@ -137,5 +132,4 @@ end
 linda:send("fila", "ENCERRAMENTO")
 thread_principal:join()
 
--- Imprime mensagem de sucesso ao final
 print("Dados dos filósofos registrados no arquivo CSV com sucesso!")

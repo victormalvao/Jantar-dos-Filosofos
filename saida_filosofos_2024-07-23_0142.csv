@@ -1,0 +1,106 @@
+tempo,filosofo,status,garfos_usados
+01:42:48,Filósofo 1,está pensando
+01:42:48,Filósofo 2,está pensando
+01:42:48,Filósofo 3,está pensando
+01:42:48,Filósofo 4,está pensando
+01:42:48,Filósofo 5,está pensando
+01:42:49,Filósofo 1,pegou garfos,Garfo 1 e Garfo 2
+01:42:49,Filósofo 1,está comendo,Garfo 1 e Garfo 2
+01:42:49,Filósofo 4,pegou garfos,Garfo 4 e Garfo 5
+01:42:49,Filósofo 4,está comendo,Garfo 4 e Garfo 5
+01:42:50,Filósofo 4,largou garfos,Garfo 4 e Garfo 5
+01:42:50,Filósofo 1,largou garfos,Garfo 1 e Garfo 2
+01:42:50,Filósofo 5,pegou garfos,Garfo 5 e Garfo 1
+01:42:50,Filósofo 1,está pensando
+01:42:50,Filósofo 5,está comendo,Garfo 5 e Garfo 1
+01:42:50,Filósofo 2,pegou garfos,Garfo 2 e Garfo 3
+01:42:50,Filósofo 2,está comendo,Garfo 2 e Garfo 3
+01:42:50,Filósofo 4,está pensando
+01:42:51,Filósofo 2,largou garfos,Garfo 2 e Garfo 3
+01:42:51,Filósofo 5,largou garfos,Garfo 5 e Garfo 1
+01:42:51,Filósofo 5,está pensando
+01:42:51,Filósofo 2,está pensando
+01:42:51,Filósofo 4,pegou garfos,Garfo 4 e Garfo 5
+01:42:51,Filósofo 4,está comendo,Garfo 4 e Garfo 5
+01:42:51,Filósofo 1,pegou garfos,Garfo 1 e Garfo 2
+01:42:51,Filósofo 1,está comendo,Garfo 1 e Garfo 2
+01:42:52,Filósofo 4,largou garfos,Garfo 4 e Garfo 5
+01:42:52,Filósofo 3,pegou garfos,Garfo 3 e Garfo 4
+01:42:52,Filósofo 3,está comendo,Garfo 3 e Garfo 4
+01:42:52,Filósofo 4,está pensando
+01:42:52,Filósofo 1,largou garfos,Garfo 1 e Garfo 2
+01:42:52,Filósofo 1,está pensando
+01:42:53,Filósofo 3,largou garfos,Garfo 3 e Garfo 4
+01:42:53,Filósofo 3,está pensando
+01:42:53,Filósofo 2,pegou garfos,Garfo 2 e Garfo 3
+01:42:53,Filósofo 2,está comendo,Garfo 2 e Garfo 3
+01:42:53,Filósofo 5,pegou garfos,Garfo 5 e Garfo 1
+01:42:53,Filósofo 5,está comendo,Garfo 5 e Garfo 1
+01:42:54,Filósofo 5,largou garfos,Garfo 5 e Garfo 1
+01:42:54,Filósofo 5,está pensando
+01:42:54,Filósofo 4,pegou garfos,Garfo 4 e Garfo 5
+01:42:54,Filósofo 4,está comendo,Garfo 4 e Garfo 5
+01:42:54,Filósofo 2,largou garfos,Garfo 2 e Garfo 3
+01:42:54,Filósofo 2,está pensando
+01:42:54,Filósofo 1,pegou garfos,Garfo 1 e Garfo 2
+01:42:54,Filósofo 1,está comendo,Garfo 1 e Garfo 2
+01:42:55,Filósofo 4,largou garfos,Garfo 4 e Garfo 5
+01:42:55,Filósofo 4,está pensando
+01:42:55,Filósofo 1,largou garfos,Garfo 1 e Garfo 2
+01:42:55,Filósofo 1,está pensando
+01:42:56,Filósofo 3,pegou garfos,Garfo 3 e Garfo 4
+01:42:56,Filósofo 3,está comendo,Garfo 3 e Garfo 4
+01:42:56,Filósofo 1,pegou garfos,Garfo 1 e Garfo 2
+01:42:56,Filósofo 1,está comendo,Garfo 1 e Garfo 2
+01:42:57,Filósofo 1,largou garfos,Garfo 1 e Garfo 2
+01:42:57,Filósofo 1,está pensando
+01:42:57,Filósofo 3,largou garfos,Garfo 3 e Garfo 4
+01:42:57,Filósofo 3,está pensando
+01:42:57,Filósofo 4,pegou garfos,Garfo 4 e Garfo 5
+01:42:57,Filósofo 4,está comendo,Garfo 4 e Garfo 5
+01:42:57,Filósofo 2,pegou garfos,Garfo 2 e Garfo 3
+01:42:57,Filósofo 2,está comendo,Garfo 2 e Garfo 3
+01:42:58,Filósofo 2,largou garfos,Garfo 2 e Garfo 3
+01:42:58,Filósofo 2,está pensando
+01:42:58,Filósofo 4,largou garfos,Garfo 4 e Garfo 5
+01:42:58,Filósofo 4,está pensando
+01:42:59,Filósofo 1,pegou garfos,Garfo 1 e Garfo 2
+01:42:59,Filósofo 1,está comendo,Garfo 1 e Garfo 2
+01:42:59,Filósofo 3,pegou garfos,Garfo 3 e Garfo 4
+01:42:59,Filósofo 3,está comendo,Garfo 3 e Garfo 4
+01:43:00,Filósofo 5,pegou garfos,Garfo 5 e Garfo 1
+01:43:00,Filósofo 1,largou garfos,Garfo 1 e Garfo 2
+01:43:00,Filósofo 1,terminou sua execução
+01:43:00,Filósofo 3,largou garfos,Garfo 3 e Garfo 4
+01:43:00,Filósofo 3,está pensando
+01:43:00,Filósofo 5,está comendo,Garfo 5 e Garfo 1
+01:43:00,Filósofo 2,pegou garfos,Garfo 2 e Garfo 3
+01:43:00,Filósofo 2,está comendo,Garfo 2 e Garfo 3
+01:43:01,Filósofo 2,largou garfos,Garfo 2 e Garfo 3
+01:43:01,Filósofo 5,largou garfos,Garfo 5 e Garfo 1
+01:43:01,Filósofo 2,está pensando
+01:43:01,Filósofo 5,está pensando
+01:43:01,Filósofo 3,pegou garfos,Garfo 3 e Garfo 4
+01:43:01,Filósofo 3,está comendo,Garfo 3 e Garfo 4
+01:43:02,Filósofo 5,pegou garfos,Garfo 5 e Garfo 1
+01:43:02,Filósofo 5,está comendo,Garfo 5 e Garfo 1
+01:43:02,Filósofo 2,pegou garfos,Garfo 2 e Garfo 3
+01:43:02,Filósofo 2,está comendo,Garfo 2 e Garfo 3
+01:43:02,Filósofo 3,largou garfos,Garfo 3 e Garfo 4
+01:43:02,Filósofo 3,está pensando
+01:43:03,Filósofo 5,largou garfos,Garfo 5 e Garfo 1
+01:43:03,Filósofo 5,está pensando
+01:43:03,Filósofo 4,pegou garfos,Garfo 4 e Garfo 5
+01:43:03,Filósofo 2,largou garfos,Garfo 2 e Garfo 3
+01:43:03,Filósofo 4,está comendo,Garfo 4 e Garfo 5
+01:43:03,Filósofo 2,terminou sua execução
+01:43:04,Filósofo 4,largou garfos,Garfo 4 e Garfo 5
+01:43:04,Filósofo 4,terminou sua execução
+01:43:04,Filósofo 3,pegou garfos,Garfo 3 e Garfo 4
+01:43:04,Filósofo 3,está comendo,Garfo 3 e Garfo 4
+01:43:05,Filósofo 5,pegou garfos,Garfo 5 e Garfo 1
+01:43:05,Filósofo 5,está comendo,Garfo 5 e Garfo 1
+01:43:05,Filósofo 3,largou garfos,Garfo 3 e Garfo 4
+01:43:05,Filósofo 3,terminou sua execução
+01:43:06,Filósofo 5,largou garfos,Garfo 5 e Garfo 1
+01:43:06,Filósofo 5,terminou sua execução
